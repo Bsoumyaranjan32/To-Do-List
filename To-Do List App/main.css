@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: rgb(218, 218, 218);
+}
+
+.text {
+    margin: 20px 0;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: rgb(8, 6, 133);
+}
+
+.container {
+    width: 450px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.input-section {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 10px;
+}
+
+#taskinput {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgb(8, 6, 133);
+    font-size: 16px;
+}
+
+#addtask {
+    background: rgb(8, 6, 133);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    opacity: .6;
+    pointer-events: none;
+}
+
+#addtask.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.tasks {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.task-item {
+    background: #fffcfc;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item p {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.task-item.completed p {
+    text-decoration: line-through;
+    color: #11111180;
+}
+
+.item-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.item-btn i {
+    font-size: 18px;
+    color: #3c096c;
+    cursor: pointer;
+}
